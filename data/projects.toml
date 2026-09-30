@@ -1,0 +1,22 @@
+[[projects]]
+name = "Embedded Robotics Face"
+description = "I made an robotic face using resberry pi pico, oled moduel, and ultra sonic sensor that allows to create an robot animation that allows to move on our table"
+technologies = ["Rust", "Raspberry Pi Pico", "Sensors"]
+
+[[projects]]
+name = "Cyber Scope"
+description = "Cyber Scope is an cybersecurity tool that helps to users to predict the attack before ot happens. It ask for our website link if it is phising or it ask of message if they are manuplating it hepls non technical users to saty safe in the world of cyeber crimes."
+technologies = ["React", "TypeScript", "Security"]
+
+[[projects]]
+name = "School Website"
+description = "Make an advance school website for schools that not only allows to see the about details of school it allows to student report their lost and found items in school it also allow student to complaint online without revaling its identity"
+technologies = ["React", "JavaScript", "Security", "Tailwind", "File-Based JSON Storage", "Node Js", "REST API", "WebSockets", "Express Js"]
+
+
+# SAMPLE CONTENT: project names and technologies come from the design brief.
+# Descriptions are placeholders. Replace everything with your own projects.
+#
+# Fields: name, description, technologies, status, github, website, featured.
+# `github` and `website` must be full http(s) URLs. All are optional except
+# `name`.

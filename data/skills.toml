@@ -1,0 +1,15 @@
+[[categories]]
+name = "Languages"
+skills = ["Rust", "TypeScript", "JavaScript", "React", "CSS", "HTMl"]
+
+[[categories]]
+name = "Systems"
+skills = ["Linux", "Networking"]
+
+[[categories]]
+name = "Embedded"
+skills = ["Embedded Rust", "Raspberry Pi Pico", "Microcontrollers", "Sensors", "Modules"]
+
+[[categories]]
+name = "Tools"
+skills = ["Git", "GitHub", "Neovim", "Cargo", "Sublime"]

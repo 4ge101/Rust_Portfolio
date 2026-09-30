@@ -1,0 +1,45 @@
+name = "Ali Sami"
+title = "Rust developer · Embedded-Systems · Web-Development"
+tagline = "Software that interacts with the physical world"
+
+ status = "Available"
+
+ location = "Nepal"
+
+bio = [
+  "Rust developer focused on robotics, embedded systems, and software that interacts with the physical world.",
+  "I’m Sami, a 15-year-old Rust developer from Nepal. I’ve participated in 3 hackathons (2 national, 1 international) and 2 BuildStations. I love building things, learning systems, and turning ideas into real projects.",
+]
+
+focus = ["Rust", "Robotics", "Systems Programming", "Linux", "Embedded Development"]
+
+interests = ["Rust", "Embedded systems", "Robotics", "Systems programming", "Linux"]
+
+ philosophy = "Understand the Machine."
+
+[portrait]
+width = 56
+invert = true
+
+  [github]
+  username = "4ge101"
+
+# [[github.repos]]
+# name = "repository-name"
+# description = "What it is, in one line."
+
+  [[contact]]
+  label = "Email"
+  value = "contact@alixsami.com"
+
+  [[contact]]
+  label = "LinkedIn"
+  value = "https://www.linkedin.com/in/sami-ali-548272319/"
+
+  [[contact]]
+  label = "Twitter"
+  value = "https://x.com/sami72982704"
+
+  [[contact]]
+  label = "GitHub"
+  value = "https://github.com/4ge101"

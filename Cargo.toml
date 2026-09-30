@@ -1,0 +1,31 @@
+[package]
+# The crates.io package name must be globally unique; the installed command is
+# always `portfolio` (see [[bin]]). Check availability before `cargo publish`.
+name = "portfolio-tui"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+description = "An interactive terminal portfolio: a native Rust TUI, not a website."
+readme = "README.md"
+license = "MIT"
+keywords = ["portfolio", "tui", "terminal", "ratatui", "cli"]
+categories = ["command-line-utilities"]
+exclude = ["/target"]
+
+[[bin]]
+name = "portfolio"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+ratatui = { version = "0.30", default-features = false, features = ["crossterm", "layout-cache", "underline-color"] }
+serde = { version = "1", features = ["derive"] }
+toml = "1"
+unicode-width = "0.2"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
+panic = "abort"
