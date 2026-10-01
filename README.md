@@ -11,17 +11,17 @@ away.
 **Linux / macOS**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/4ge101/Rust_Portfolio/main/install.sh | sh
 ```
 
 **Windows (PowerShell)**
 
 ```powershell
-irm https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/4ge101/Rust_Portfolio/main/install.ps1 | iex
 ```
 
 Both scripts detect your OS/CPU, download the matching binary from the
-[Releases page](https://github.com/USERNAME/REPOSITORY/releases), and put it
+[Releases page](https://github.com/4ge101/Rust_Portfolio/releases), and put it
 on your PATH. Prefer to do it by hand? Grab the archive for your platform
 from Releases, unzip it, and run the binary directly — it works from any
 folder, no installation step needed.
@@ -29,7 +29,7 @@ folder, no installation step needed.
 Already have Rust and want to build it yourself instead:
 
 ```bash
-cargo install --git https://github.com/USERNAME/REPOSITORY
+cargo install --git https://github.com/4ge101/Rust_Portfolio
 ```
 
 ## Run

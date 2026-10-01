@@ -3,11 +3,11 @@
 # Releases and puts it on PATH. No git clone, no Rust toolchain required.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/4ge101/Rust_Portfolio/main/install.sh | sh
 
 set -eu
 
-REPO="USERNAME/REPOSITORY"
+REPO="4ge101/Rust_Portfolio"
 INSTALL_DIR="${PORTFOLIO_INSTALL_DIR:-$HOME/.local/bin}"
 
 os="$(uname -s)"

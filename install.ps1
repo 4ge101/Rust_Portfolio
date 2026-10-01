@@ -2,11 +2,11 @@
 # PATH. No git clone, no Rust toolchain required.
 #
 # Usage (PowerShell):
-#   irm https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/4ge101/Rust_Portfolio/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 
-$Repo = "USERNAME/REPOSITORY"
+$Repo = "4ge101/Rust_Portfolio"
 $InstallDir = "$env:LOCALAPPDATA\portfolio\bin"
 $Target = "x86_64-pc-windows-msvc"
 $Url = "https://github.com/$Repo/releases/latest/download/portfolio-$Target.zip"
