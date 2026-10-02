@@ -577,7 +577,7 @@ mod tests {
         let screen = render(&mut app, 40, 12);
         assert!(screen.contains("Contact"), "{screen}");
     }
-
+ 
     #[test]
     fn long_documents_scroll_to_the_end() {
         let mut app = sample_app(false);
@@ -586,7 +586,7 @@ mod tests {
         let screen = render(&mut app, 60, 14);
         assert!(
             screen.contains("Warning")
-                || screen.contains("portfolio 0.1.0")
+                || screen.contains("alixsami 0.1.0")
                 || screen.contains("Content"),
             "{screen}"
         );

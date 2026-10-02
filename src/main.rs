@@ -25,7 +25,7 @@ fn main() -> ExitCode {
     match run() {
         Ok(code) => code,
         Err(err) => {
-            eprintln!("portfolio: {err:#}");
+            eprintln!("alixsami: {err:#}");
             ExitCode::FAILURE
         }
     }
@@ -35,7 +35,7 @@ fn run() -> Result<ExitCode> {
     let cli = match cli::parse(std::env::args().skip(1)) {
         Ok(cli) => cli,
         Err(message) => {
-            eprintln!("portfolio: {message}\nTry `portfolio --help`.");
+            eprintln!("alixsami: {message}\nTry `alixsami --help`.");
             return Ok(ExitCode::from(2));
         }
     };
@@ -46,7 +46,7 @@ fn run() -> Result<ExitCode> {
             return Ok(ExitCode::SUCCESS);
         }
         Mode::Version => {
-            println!("portfolio {}", env!("CARGO_PKG_VERSION"));
+            println!("alixsami {}", env!("CARGO_PKG_VERSION"));
             return Ok(ExitCode::SUCCESS);
         }
         Mode::Run | Mode::Check => {}
@@ -66,7 +66,7 @@ fn run() -> Result<ExitCode> {
     }
 
     if !io::stdout().is_terminal() || !io::stdin().is_terminal() {
-        bail!("this is an interactive program and needs a terminal (try `portfolio --check` in scripts)");
+        bail!("this is an interactive program and needs a terminal (try `alixsami --check` in scripts)");
     }
     if std::env::var("TERM").is_ok_and(|term| term == "dumb") {
         bail!(
@@ -137,8 +137,8 @@ fn check(
     portrait: &ascii::PortraitLoad,
     dir: Option<&std::path::Path>,
 ) -> ExitCode {
-    let p = &loaded.portfolio;
-    println!("portfolio {}", env!("CARGO_PKG_VERSION"));
+    let p = &loaded.alixsami;
+    println!("alixsami {}", env!("CARGO_PKG_VERSION"));
     match dir {
         Some(dir) => println!("content   : bundled, overridden from {}", dir.display()),
         None => println!("content   : bundled"),

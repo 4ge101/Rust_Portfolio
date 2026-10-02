@@ -33,20 +33,20 @@ case "$arch" in
 esac
 
 target="${cpu}-${platform}"
-url="https://github.com/${REPO}/releases/latest/download/portfolio-${target}.tar.gz"
+url="https://github.com/${REPO}/releases/latest/download/alixsami-${target}.tar.gz"
 
-echo "Downloading portfolio for ${target} ..."
+echo "Downloading alixsami for ${target} ..."
 tmp="$(mktemp -d)"
 trap 'rm -rf "$tmp"' EXIT
 
-curl -fsSL "$url" -o "$tmp/portfolio.tar.gz"
-tar xzf "$tmp/portfolio.tar.gz" -C "$tmp"
+curl -fsSL "$url" -o "$tmp/alixsami.tar.gz"
+tar xzf "$tmp/alixsami.tar.gz" -C "$tmp"
 
 mkdir -p "$INSTALL_DIR"
-mv "$tmp/portfolio" "$INSTALL_DIR/portfolio"
-chmod +x "$INSTALL_DIR/portfolio"
+mv "$tmp/alixsami" "$INSTALL_DIR/alixsami"
+chmod +x "$INSTALL_DIR/alixsami"
 
-echo "Installed to $INSTALL_DIR/portfolio"
+echo "Installed to $INSTALL_DIR/alixsami"
 
 case ":$PATH:" in
     *":$INSTALL_DIR:"*) ;;
@@ -58,4 +58,4 @@ case ":$PATH:" in
 esac
 
 echo
-echo "Run it with: portfolio"
+echo "Run it with: alixsami"
