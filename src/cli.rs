@@ -19,7 +19,7 @@ pub const HELP: &str = "\
 portfolio - an interactive terminal portfolio
 
 USAGE:
-    alixsami [OPTIONS]
+    portfolio [OPTIONS]
 
 OPTIONS:
     -h, --help           Show this help
@@ -28,7 +28,7 @@ OPTIONS:
                          Any of profile.toml, projects.toml, skills.toml,
                          experience.toml, achievements.toml may be present;
                          missing files fall back to the bundled copy.
-                         Default: ~/.config/alixsami (if it exists)
+                         Default: ~/.config/portfolio (if it exists)
         --image <FILE>   Portrait to convert to ASCII (JPEG or PNG)
         --check          Validate content and portrait, then exit
                          (exit status 1 if anything needs attention)

@@ -50,17 +50,17 @@ jobs:
         if: matrix.archive == 'tar.gz'
         run: |
           cd target/${{ matrix.target }}/release
-          tar czf ../../../alixsami-${{ matrix.target }}.tar.gz alixsami
+          tar czf ../../../portfolio-${{ matrix.target }}.tar.gz portfolio
           cd -
 
       - name: Package (Windows)
         if: matrix.archive == 'zip'
         run: |
           cd target/${{ matrix.target }}/release
-          7z a ../../../alixsami-${{ matrix.target }}.zip alixsami.exe
+          7z a ../../../portfolio-${{ matrix.target }}.zip portfolio.exe
           cd -
 
       - name: Upload release asset
         uses: softprops/action-gh-release@v2
         with:
-          files: alixsami-${{ matrix.target }}.${{ matrix.archive }}
+          files: portfolio-${{ matrix.target }}.${{ matrix.archive }}

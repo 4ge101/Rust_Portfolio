@@ -13,7 +13,7 @@ categories = ["command-line-utilities"]
 exclude = ["/target"]
 
 [[bin]]
-name = "alixsami"
+name = "portfolio"
 path = "src/main.rs"
 
 [dependencies]
