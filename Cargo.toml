@@ -1,6 +1,6 @@
 [package]
 # The crates.io package name must be globally unique; the installed command is
-# always `portfolio` (see [[bin]]). Check availability before `cargo publish`.
+# always `alixsami` (see [[bin]]). Check availability before `cargo publish`.
 name = "portfolio-tui"
 version = "0.1.0"
 edition = "2021"
@@ -13,7 +13,7 @@ categories = ["command-line-utilities"]
 exclude = ["/target"]
 
 [[bin]]
-name = "portfolio"
+name = "alixsami"
 path = "src/main.rs"
 
 [dependencies]

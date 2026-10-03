@@ -1,4 +1,4 @@
-# Downloads the prebuilt portfolio.exe from GitHub Releases and puts it on
+# Downloads the prebuilt alixsami.exe from GitHub Releases and puts it on
 # PATH. No git clone, no Rust toolchain required.
 #
 # Usage (PowerShell):
@@ -7,23 +7,23 @@
 $ErrorActionPreference = "Stop"
 
 $Repo = "4ge101/Rust_Portfolio"
-$InstallDir = "$env:LOCALAPPDATA\portfolio\bin"
+$InstallDir = "$env:LOCALAPPDATA\alixsami\bin"
 $Target = "x86_64-pc-windows-msvc"
-$Url = "https://github.com/$Repo/releases/latest/download/portfolio-$Target.zip"
+$Url = "https://github.com/$Repo/releases/latest/download/alixsami-$Target.zip"
 
-Write-Host "Downloading portfolio for $Target ..."
+Write-Host "Downloading alixsami for $Target ..."
 
 $tmp = New-Item -ItemType Directory -Path ([System.IO.Path]::GetTempPath()) -Name ([System.Guid]::NewGuid())
-$zipPath = Join-Path $tmp "portfolio.zip"
+$zipPath = Join-Path $tmp "alixsami.zip"
 
 Invoke-WebRequest -Uri $Url -OutFile $zipPath
 Expand-Archive -Path $zipPath -DestinationPath $tmp -Force
 
 New-Item -ItemType Directory -Path $InstallDir -Force | Out-Null
-Move-Item -Path (Join-Path $tmp "portfolio.exe") -Destination (Join-Path $InstallDir "portfolio.exe") -Force
+Move-Item -Path (Join-Path $tmp "alixsami.exe") -Destination (Join-Path $InstallDir "alixsami.exe") -Force
 Remove-Item -Recurse -Force $tmp
 
-Write-Host "Installed to $InstallDir\portfolio.exe"
+Write-Host "Installed to $InstallDir\alixsami.exe"
 
 $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
 if ($userPath -notlike "*$InstallDir*") {
@@ -34,4 +34,4 @@ if ($userPath -notlike "*$InstallDir*") {
 }
 
 Write-Host ""
-Write-Host "Run it with: portfolio"
+Write-Host "Run it with: alixsami"

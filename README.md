@@ -35,9 +35,9 @@ cargo install --git https://github.com/4ge101/Rust_Portfolio
 ## Run
 
 ```bash
-portfolio                 # launch the TUI
-portfolio --help          # usage and options
-portfolio --version       # print the version
+alixsami                 # launch the TUI
+alixsami --help          # usage and options
+alixsami --version       # print the version
 ```
 
 ### Keys

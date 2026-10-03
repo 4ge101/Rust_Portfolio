@@ -274,7 +274,7 @@ pub fn default_config_dir() -> Option<PathBuf> {
         .filter(|value| !value.is_empty())
         .map(PathBuf::from)
         .or_else(|| std::env::var_os("HOME").map(|home| PathBuf::from(home).join(".config")))?;
-    let dir = base.join("portfolio");
+    let dir = base.join("alixsami");
     dir.is_dir().then_some(dir)
 }
 
