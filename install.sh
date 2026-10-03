@@ -1,10 +1,3 @@
-#!/bin/sh
-# Downloads the prebuilt `alixsami` binary for this OS/CPU from GitHub
-# Releases and puts it on PATH. No git clone, no Rust toolchain required.
-#
-# Usage:
-#   curl -fsSL https://raw.githubusercontent.com/4ge101/Rust_Portfolio/main/install.sh | sh
-
 set -eu
 
 REPO="4ge101/Rust_Portfolio"

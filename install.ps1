@@ -1,9 +1,3 @@
-# Downloads the prebuilt alixsami.exe from GitHub Releases and puts it on
-# PATH. No git clone, no Rust toolchain required.
-#
-# Usage (PowerShell):
-#   irm https://raw.githubusercontent.com/4ge101/Rust_Portfolio/main/install.ps1 | iex
-
 $ErrorActionPreference = "Stop"
 
 $Repo = "4ge101/Rust_Portfolio"
